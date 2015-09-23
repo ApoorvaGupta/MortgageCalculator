@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#ffffff">
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="404dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+
+        <TextView
+            android:layout_width="66dp"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:text="Tax Paid"
+            android:paddingTop="10dp"
+            android:layout_gravity="center|left" />
+
+        <TextView
+            android:id="@+id/total_tax_paid"
+            android:layout_width="183dp"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="404dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:layout_gravity="left">
+
+        <TextView
+            android:id="@+id/total_interest_paid"
+            android:layout_width="183dp"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:text="Interest Paid"
+            android:paddingTop="10dp"
+            android:layout_gravity="center|left" />
+
+    </FrameLayout>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="404dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:layout_gravity="left">
+
+        <TextView
+            android:id="@+id/monthly_payment"
+            android:layout_width="183dp"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:text="Monthly Payment"
+            android:paddingTop="10dp"
+            android:layout_gravity="center|left" />
+
+    </FrameLayout>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="404dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:layout_gravity="left">
+
+        <TextView
+            android:id="@+id/pay_off_date"
+            android:layout_width="208dp"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:text="Pay-off Date"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal|left" />
+
+    </FrameLayout>
+</LinearLayout>

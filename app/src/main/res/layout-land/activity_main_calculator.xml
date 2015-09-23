@@ -1,0 +1,212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="400dp"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="@drawable/balance">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="323dp"
+    android:layout_height="313dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Home Value($)"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/home_value"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:imeOptions="flagNoExtractUi"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Principal Loan($)"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/loan_amount"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Down Payment($)"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/down_payment"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Interest Rate(%)"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/interest_rate"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Select Term(yr)"
+            android:paddingTop="10dp" />
+
+        <Spinner
+            android:id="@+id/static_spinner"
+            android:layout_width="154dp"
+            android:layout_height="27dp"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="7dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Tax Rate(%)"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/property_tax"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp" />
+
+    </FrameLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="377dp"
+            android:layout_height="37dp"
+            android:orientation = "vertical">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_calculate"
+            android:onClick="selectFrag" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:onClick="selectFrag"
+                android:text="@string/button_reset"
+                android:layout_gravity="center_horizontal" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <RelativeLayout
+        class="com.example.apoorva.mortgagecalculator.FragmentOne"
+        android:id="@+id/fragment_place"
+        android:layout_width="293dp"
+        android:layout_height="281dp"
+        tools:layout="@layout/fragment_two"
+        android:layout_gravity="left" />
+
+</LinearLayout>
+
